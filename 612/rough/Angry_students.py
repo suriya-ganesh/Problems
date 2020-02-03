@@ -1,4 +1,5 @@
 '''
+https://codeforces.com/contest/1287/problem/A
 Note :
 Was trying to solve this problem in a brute force method, by implementing the same
 Algorithm in the question.
