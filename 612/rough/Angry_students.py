@@ -1,3 +1,9 @@
+'''
+Note :
+Was trying to solve this problem in a brute force method, by implementing the same
+Algorithm in the question.
+When in reality there was a much simpler and easy algorithm.
+'''
 if __name__ == "__main__":
 
     test_cases = int(input())
