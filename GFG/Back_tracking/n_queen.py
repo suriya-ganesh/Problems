@@ -1,7 +1,2 @@
-value = {
-    "new" : ""
-}
-
-value["new"] = "hell!!!"
-
-print(value)
+print("\033[0;36;40m                      <<<=======>>>>     ")
+print("\033[0;36;40m completed creating policy. cancelling it now.")
