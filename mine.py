@@ -32,29 +32,28 @@ def B(grid, row, column) :
             if grid[row][column+1] != "v":
                 grid = B(grid, row, column+1)
 
+
     return grid
 
 
 def numIslands(grid) :
     islands = 0
+    symbols = ['0','v','1']
     for row in range(len(grid)):
         for column in range(len(grid[row])):
-            if grid[row][column] == '0' or grid[row][column] == 'v' or grid[row][column] == '1':
-
-                if grid[row][column] != '0' and grid[row][column] != "v":
-
-                    # exit()
+            if grid[row][column] in symbols:
+                if grid[row][column] == '1':
                     grid = B(grid, row, column)
                     islands += 1
             else:
                 return 0
 
-    print("\n\n")
-
-    for i in grid:
-        for j in i:
-            print(j,end=" ")
-        print("\n",end="")
+    # print("\n\n")
+    #
+    # for i in grid:
+    #     for j in i:
+    #         print(j,end=" ")
+    #     print("\n",end="")
     return islands
 
 
@@ -63,7 +62,11 @@ if __name__ == '__main__':
     grid = []
     for _ in range(n):
         r = input().split()
-        grid.append(r)
+        if len(r) == m:
+            grid.append(r)
+        else:
+            grid = [[0]]
+            break
     result = numIslands(grid)
 
     print(result)
