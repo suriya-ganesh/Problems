@@ -61,3 +61,27 @@ if __name__ == '__main__':
     print(result)
 
 
+'''
+Given a 2D map of 1s (land) and 0s (water), count the number of islands. An island is surrounded by water
+and is formed by connecting horizontal and diagonal lands together. You can assume that the edges of the lands are
+filled with water.
+
+Note : Diagonal connections don't indicate connections. For error cases print 0
+
+
+example :
+
+Input :
+
+5 5
+0 0 1 0 0
+0 1 1 0 1
+0 0 1 1 1
+0 0 1 0 0
+0 0 0 0 0
+
+Output :
+
+1
+ 
+'''
