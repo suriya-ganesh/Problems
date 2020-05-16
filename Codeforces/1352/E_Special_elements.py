@@ -3,6 +3,7 @@ for _ in range(int(input())) :
     value = int(input())
     s = input()
     a = *map(int, s.split()),
+    print(a)
     n = len(a)
     b = 2 * n * [0]
     r = 0
