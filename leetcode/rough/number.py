@@ -7,4 +7,3 @@ normalised = k % (r*c)
 my_list = [j for i in grid for j in i]
 new_list = []
 
-k = [[1,2],[3,4]]
