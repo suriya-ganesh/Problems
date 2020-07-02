@@ -1,3 +1,7 @@
+'''
+https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem
+'''
+
 def jumpingOnClouds(c):
     x,y = 0,0
     while x<len(c)-2:
